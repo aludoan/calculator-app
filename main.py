@@ -63,6 +63,7 @@ class CalculatorApp:
         try:
             text = self.get_display_text()
             answer = eval(text)
+            answer = round(answer,4)
             self.set_display_text(str(answer))
 
         except Exception:
